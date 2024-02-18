@@ -1,0 +1,186 @@
+/* Background Grid layout------------------------------------------------ */
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "character-grid character-grid"
+    "location-grid episode-grid";
+    
+   
+}
+.inner-character-grid{
+    display:grid;
+    grid-template-columns: repeat(4,300px);
+    grid-column-gap:70px;
+    margin-left: 50px;
+}
+.character-grid{
+    grid-area: character-grid;
+    background-color: #92B4A7;
+    height: 850px;
+    
+    
+}
+
+.location-grid{
+    grid-area: location-grid;
+    background-color: #8C8A93;
+    height: 550px;
+}
+
+.episode-grid{
+    grid-area: episode-grid;
+    background-color: #81667A;
+    height: 550px;
+}  
+
+/* Text apearance------------------------------- */
+
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 24px;
+}
+/* Header ----------------------------------------------- */
+header{
+    background-color: rgb(1, 19, 8);
+    margin: 0;
+    height:80px;
+}
+h1{
+    color:  #EFF9F0; 
+    margin: 0;
+    padding-top: 10px; 
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+/* Body --------------------------------------------- */
+body{
+    margin: 0;
+    width: 100%;
+}
+footer{
+    background-color: rgb(1, 19, 8);
+    margin: 0;
+    height:80px;
+}
+/* Button configuration------------------------------------------ */
+
+.button {
+    background-color: #EFF9F0;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 15px 32px;
+    margin: 25px 10px;
+    display: inline-block;
+    transition-duration: 0.5s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    
+}
+
+.button:hover {
+    color:  #EFF9F0;
+    background-color: rgb(88, 146, 0);
+}
+
+/* Animtion on character profile------------------------------------------------------- */
+#character-info:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.1s;
+}
+#character-info{
+    /* transition-duration: 0.5s; */
+    background-color: rgb(59, 95, 84);
+    border: none;
+    border-radius: 25px;
+    font-size: inherit;
+    color:  #EFF9F0;
+    height:460px;
+    display:inherit;
+    text-align:center;
+    animation-name: pop;
+    animation-duration: 3s;
+    
+    
+    
+}
+@keyframes pop{
+    
+    20% { background-color: rgb(113, 214, 143);}
+    100% { background-color:rgb(59, 95, 84) ;}
+}
+/* Location and episode info design-------------------------------------------- */
+
+#location-info  {
+    font-size: 24px;
+    display:inherit;
+    text-align:center;
+    
+    background-color: rgb(218, 213, 238);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    width: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+#episode-info {
+    font-size: 24px;
+    display:inherit;
+    text-align:center;
+    
+    background-color: rgb(218, 213, 238);
+    border: none;
+    border-radius: 30px;
+    padding: 15px 32px;
+    width: 40%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* Error container------------------------------------------------------------------- */
+#display-error {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: fixed;
+}
+.error-message{
+    background-color: floralwhite;
+    width: 50%;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    height:50px;
+    border-radius: 25px;
+
+}
+.error-close{
+    background-color: floralwhite;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    border: none;
+}
+.error-message p{
+    font-size: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--Need at least three endpoints (results) when asking a question through API.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick and Morty Database</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="js/main.js" defer></script>
+</head> 
+<body>
+    <header>
+        <h1>Rick and Morty</h1>
+    </header>
+    <main>
+        <!-- Section containing Rick and morty Info-->
+        <section id = "content">
+            <div class="character-grid">
+                <!-- Character report-->
+                <h2 id= "character"> Who's holding your Terry Flaps</h2>
+                <p>Find out the different characters in the Rick and Morty universe. Want more than just what was given to you? Randomize by just clicking the randomize button.</p>
+                <button class= "button" id="get-character">Randomize</button>
+                <div id="display-error">
+                    <div class="error-message">
+                        <button class="error-close">x</button>
+                        <p>Sorry! <br> One of the links are not working! </p>
+                    </div>
+                </div>
+                <div class="inner-character-grid">
+                    <div id= "character-info" class="character_1">
+                        <div class="character-image" ></div>
+                        <div class = "character"></div>
+                        <div class="character-status"></div>
+                        <div class="character-species"></div>
+                        <div class="character-gender"></div>
+                        <div class="character-location"></div>
+                        
+                    </div>
+                    <div id = "character-info" class="character_2">
+                        <div class="character-image2"></div>
+                        <div class = "character2"></div>
+                        <div class="character-status2"></div>
+                        <div class="character-species2"></div>
+                        <div class="character-gender2"></div>
+                        <div class="character-location2"></div>
+                    </div>
+                    <div id = "character-info" class="character_3">
+                        <div class="character-image3"></div>
+                        <div class = "character3"></div>
+                        <div class="character-status3"></div>
+                        <div class="character-species3"></div>
+                        <div class="character-gender3"></div>
+                        <div class="character-location3"></div>
+                    </div>
+                    <div id = "character-info" class="character_4">
+                        <div class="character-image4"></div>
+                        <div class = "character4"></div>
+                        <div class="character-status4"></div>
+                        <div class="character-species4"></div>
+                        <div class="character-gender4"></div>
+                        <div class="character-location4"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="location-grid">
+                <!-- Different location reports-->
+                <h2 id="location"> Where is your Terry Flaps</h2>
+                <p>Every character lives somewhere in the universe.
+                    <br> Find out different places in the Rick and Morty universe.</p>
+                <br>
+                <button class="button" id="get-location">Randomize</button>     
+                <div id="location-info">
+                    <div class="location"></div>
+                    <br>
+                    <div class="location-type"></div>
+                    <br>
+                    <div class="location-dimension"></div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="episode-grid">
+                <!-- Episode report-->
+                <h2 id="episode"> Which Terry Flap to watch</h2>
+                <p>Want to know what episode to watch ? 
+                    <br>Randomize and have fun with your episode.</p>
+                <br>
+                <button class="button" id="get-episode">Randomize</button>
+                <div id="episode-info">
+                    <div class="episode"></div>
+                    <br>
+                    <div class="episode-name"></div>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
